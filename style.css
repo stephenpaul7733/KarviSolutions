@@ -85,24 +85,31 @@ body {
 }
 
 /* ================= HAMBURGER ================= */
+/* ================= HAMBURGER (BIG TAP AREA) ================= */
 .hamburger {
   display: none;
-  width: 35px; /* slightly bigger */
-  height: 24px;
+  width: 56px;          /* BIG tap area */
+  height: 56px;
+  padding: 12px;        /* increases clickable space */
+  box-sizing: border-box;
+
   flex-direction: column;
   justify-content: space-between;
   cursor: pointer;
+  border-radius: 10px;  /* soft touch */
 }
 
+/* LINES */
 .hamburger span {
   display: block;
-  height: 5px; /* thicker bars */
+  height: 4px;          /* visible but clean */
   width: 100%;
   background: var(--primary);
-  border-radius: 2px;
-  transition: all 0.4s ease;
+  border-radius: 4px;
+  transition: all 0.35s ease;
 }
 
+/* ACTIVE ANIMATION */
 .hamburger.active span:nth-child(1) {
   transform: rotate(45deg) translate(6px, 6px);
 }
@@ -114,6 +121,7 @@ body {
 .hamburger.active span:nth-child(3) {
   transform: rotate(-45deg) translate(6px, -6px);
 }
+
 
 /* ================= MOBILE STYLES ================= */
 @media (max-width: 768px) {
