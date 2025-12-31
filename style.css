@@ -84,13 +84,12 @@ body {
   border-bottom: 2px solid var(--accent);
 }
 
-/* ================= HAMBURGER ================= */
 /* ================= HAMBURGER (BIG TAP AREA) ================= */
 .hamburger {
   display: none;
-  width: 56px;          /* BIG tap area */
+  width: 30px;          /* BIG tap area */
   height: 56px;
-  padding: 12px;        /* increases clickable space */
+  padding: 20px;        /* increases clickable space */
   box-sizing: border-box;
 
   flex-direction: column;
@@ -102,7 +101,7 @@ body {
 /* LINES */
 .hamburger span {
   display: block;
-  height: 4px;          /* visible but clean */
+  height: 8px;          /* visible but clean */
   width: 100%;
   background: var(--primary);
   border-radius: 4px;
